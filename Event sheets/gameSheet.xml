@@ -1,0 +1,823 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>gameSheet</name>
+    <events>
+        <variable constant="0" name="shiftMeter" sid="592099809887018" static="0" type="number">100</variable>
+        <variable constant="0" name="deathMenuSelect" sid="687308644853386" static="0" type="number">0</variable>
+        <variable constant="0" name="currentLevel" sid="372066722164981" static="0" type="number">0</variable>
+        <variable constant="0" name="playerOpacity" sid="618154224653782" static="0" type="number">100</variable>
+        <variable constant="0" name="menuSelect" sid="147784675475369" static="0" type="number">0</variable>
+        <include>menuSheet</include>
+        <event-group description="" sid="474279441050906" title="On start of layout">
+            <sub-events>
+                <event-block sid="789624181600060">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="778531530956565" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="999203702485395" type="Audio">
+                            <param id="0" name="Tag">&quot;&quot;</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="506812049689116" type="animations">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="948283545304515" type="player">
+                            <param id="0" name="Animation">&quot;Waiting&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="603917484544037" type="player" />
+                        <action id="-16" name="Set opacity" sid="260374682050300" type="invisibleWalls">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="415087668763584" type="Audio">
+                            <param id="0" name="Audio file">menuMusic</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;menuMusic&quot;</param>
+                        </action>
+                        <action id="3" name="Set progress" sid="814596311091632" type="ProgressBar">
+                            <param id="0" name="Value">shiftMeter</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="473195642436881" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="391831161892689" type="System">
+                            <param id="0" name="Layer">1</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="2" name="Stop" sid="830644893957115" type="door" />
+                        <action id="-16" name="Set opacity" sid="995010486458617" type="invisibleWall">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="883967234569669" type="player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="556923743836495" type="System">
+                            <param id="0" name="Group name">&quot;Up arrow&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="894207346435339" title="Tutorial">
+            <sub-events>
+                <event-block sid="551435738679483">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="840224805715423" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="930875602062501" type="invisibleTexts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="637476394323900" title="Jump learning">
+                    <sub-events>
+                        <event-block sid="333133820809637">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="290154897838505" type="player">
+                                    <param id="0" name="Object">tutorialJumpWall</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="820667100197482" type="player">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="621436515524825" type="player">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="225131848649576" type="tutorialJumpText">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block any="1" sid="245255369950831">
+                                    <conditions>
+                                        <condition behavior="Platform" id="3" name="Is jumping" sid="792572008304302" type="player" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="898173098820434" type="player">
+                                            <param id="0" name="Speed">500</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="458348262748922" type="player">
+                                            <param id="0" name="Animation">&quot;Run&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="997024101913638" type="tutorialJumpText">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="930074418533176" type="tutorialJumpWall" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="928338077701364" title="Shift learning">
+                    <sub-events>
+                        <event-block sid="988286803277759">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="539286341724353" type="player">
+                                    <param id="0" name="Object">tutorialShiftWall</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="566406179474368" type="player">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="757362396974515" type="player">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="274344593311058" type="tutorialShiftText">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="1" name="Set visible" sid="950885855533491" type="ProgressBar">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="214911122695071">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="948178689500662" type="Keyboard">
+                                            <param id="0" name="Key">32</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="259924013912719" type="player">
+                                            <param id="0" name="Speed">500</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="305278163707712" type="player">
+                                            <param id="0" name="Animation">&quot;Shift&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="747951910588684" type="tutorialShiftText">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="496666955963185" type="tutorialShiftWall" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="924861582045451" title="Tutorial ending">
+                    <sub-events>
+                        <event-block sid="358486350398107">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="852452856238254" type="player">
+                                    <param id="0" name="Object">invisibleWall</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="296219267351479" type="player">
+                                    <param id="0" name="Speed">0</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="366440828900123" type="player">
+                                    <param id="0" name="Animation">&quot;Waiting&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="964397549842350" type="tutorialEndText">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="943920753387710">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="214751319182471" type="System">
+                                            <param id="0" name="Seconds">2</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="434337650221107" type="player">
+                                            <param id="0" name="Animation">&quot;Run&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="569394256305434" type="player">
+                                            <param id="0" name="Speed">500</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="239715585667324" type="invisibleWall" />
+                                        <action id="-15" name="Set visible" sid="513314995285189" type="tutorialEndText">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="822752191125039" title="Death menu">
+            <sub-events>
+                <event-block sid="197949991682239">
+                    <conditions>
+                        <condition id="-9" name="Layer is visible" sid="121585282778110" type="System">
+                            <param id="0" name="Layer">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="252932340525045" type="System">
+                            <param id="0" name="Group name">&quot;Death menu&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="171721950785773">
+                    <conditions>
+                        <condition id="-9" inverted="1" name="Layer is visible" sid="445757746594537" type="System">
+                            <param id="0" name="Layer">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="993579238737806" type="System">
+                            <param id="0" name="Group name">&quot;Death menu&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="908175899152285">
+                    <conditions>
+                        <condition id="-9" name="Layer is visible" sid="303685488303078" type="System">
+                            <param id="0" name="Layer">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set CSS style" sid="492269349498640" type="ingameMenuButtons">
+                            <param id="0" name="Property name">&quot;color&quot;</param>
+                            <param id="1" name="Value">&quot;white&quot;</param>
+                        </action>
+                        <action id="5" name="Set CSS style" sid="481631464831186" type="ingameMenuButtons">
+                            <param id="0" name="Property name">&quot;border&quot;</param>
+                            <param id="1" name="Value">&quot;2px solid white&quot;</param>
+                        </action>
+                        <action id="5" name="Set CSS style" sid="392259179600083" type="ingameMenuButtons">
+                            <param id="0" name="Property name">&quot;background-color&quot;</param>
+                            <param id="1" name="Value">&quot;transparent&quot;</param>
+                        </action>
+                        <action id="5" name="Set CSS style" sid="599988900945303" type="ingameMenuButtons">
+                            <param id="0" name="Property name">&quot;font-size&quot;</param>
+                            <param id="1" name="Value">&quot;40px&quot;</param>
+                        </action>
+                        <action id="5" name="Set CSS style" sid="287259778799863" type="ingameMenuButtons">
+                            <param id="0" name="Property name">&quot;font-family&quot;</param>
+                            <param id="1" name="Value">&quot;Microsoft Tai Le&quot;</param>
+                        </action>
+                        <action id="5" name="Set CSS style" sid="722107919881520" type="ingameMenuButtons">
+                            <param id="0" name="Property name">&quot;font-weight&quot;</param>
+                            <param id="1" name="Value">&quot;700&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="715232720172101" title="Menu movement.">
+                    <sub-events>
+                        <event-block sid="983495828403435">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="806571870755967" type="Keyboard">
+                                    <param id="0" name="Key">39</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="268761304012424">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="912192065392319" type="System">
+                                            <param id="0" name="Variable">deathMenuSelect</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="531593312484423" type="System">
+                                            <param id="0" name="Variable">deathMenuSelect</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="151950229010001">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="993725389339097" type="Keyboard">
+                                    <param id="0" name="Key">37</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="898119835453503">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="665706717653174" type="System">
+                                            <param id="0" name="Variable">deathMenuSelect</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="740778010969695" type="System">
+                                            <param id="0" name="Variable">deathMenuSelect</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="532339893813571">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="302846139559912" type="System">
+                                    <param id="0" name="Variable">deathMenuSelect</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="160174747943690" type="deathMarkerLeft2">
+                                    <param id="0" name="X">gameOverYes.X + 25</param>
+                                    <param id="1" name="Y">gameOverYes.Y + 10</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="451165659032874" type="deathMarkerRight2">
+                                    <param id="0" name="X">gameOverYes.X + 210</param>
+                                    <param id="1" name="Y">gameOverYes.Y + 10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="190382819549694">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="226738486723898" type="System">
+                                    <param id="0" name="Variable">deathMenuSelect</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="591549017414792" type="deathMarkerLeft2">
+                                    <param id="0" name="X">gameOverNo.X + 25</param>
+                                    <param id="1" name="Y">gameOverNo.Y + 10</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="979946353047516" type="deathMarkerRight2">
+                                    <param id="0" name="X">gameOverNo.X + 210</param>
+                                    <param id="1" name="Y">gameOverNo.Y + 10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="863424321452457" title="Menu action">
+                    <sub-events>
+                        <event-block sid="897876897139562">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="180155633646129" type="Keyboard">
+                                    <param id="0" name="Key">13</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="212574062319940" type="System">
+                                    <param id="0" name="Variable">deathMenuSelect</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-9" name="Layer is visible" sid="781978549364132" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-26" name="Restart layout" sid="191487210206914" type="System" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="743135893692316">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="841491095725245" type="Keyboard">
+                                    <param id="0" name="Key">13</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="711367905926771" type="System">
+                                    <param id="0" name="Variable">deathMenuSelect</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-9" name="Layer is visible" sid="238398151834504" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Close" sid="165369259843702" type="Browser" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="866649012671217" title="Player">
+            <sub-events>
+                <event-group description="" sid="460019883621123" title="Player Movement">
+                    <sub-events>
+                        <event-block sid="840638871382704">
+                            <conditions>
+                                <condition id="-9" inverted="1" name="Layer is visible" sid="669315159401456" type="System">
+                                    <param id="0" name="Layer">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="963981221729900" type="System">
+                                    <param id="0" name="Group name">&quot;Up arrow&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="506860105546834">
+                            <conditions>
+                                <condition id="-9" inverted="1" name="Layer is visible" sid="664028116251977" type="System">
+                                    <param id="0" name="Layer">1</param>
+                                </condition>
+                                <condition id="-9" inverted="1" name="Layer is visible" sid="746418562606498" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-group description="" sid="620560896847984" title="Up arrow">
+                                    <sub-events>
+                                        <event-block sid="727228517935744">
+                                            <conditions>
+                                                <condition id="0" name="On key pressed" sid="235938399724985" type="Keyboard">
+                                                    <param id="0" name="Key">38</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Platform" id="7" name="Simulate control" sid="955451680425540" type="player">
+                                                    <param id="0" name="Control">2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="858344546723561">
+                                            <conditions>
+                                                <condition id="3" name="On key released" sid="333204407153156" type="Keyboard">
+                                                    <param id="0" name="Key">38</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="173567176229092" type="player">
+                                                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="569829423252225">
+                                            <conditions>
+                                                <condition behavior="Platform" id="5" name="On jump" sid="179683194792485" type="player" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="402682361925792" type="player">
+                                                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-group>
+                                <event-group description="" sid="108759438348864" title="Space">
+                                    <sub-events>
+                                        <event-block sid="618601306408119">
+                                            <conditions>
+                                                <condition id="2" name="Key is down" sid="291615533636929" type="Keyboard">
+                                                    <param id="0" name="Key">32</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="873861049639713" type="player">
+                                                    <param id="0" name="Animation">&quot;Shift&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-24" name="Move to top" sid="813705388493074" type="player" />
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="451817019418114" type="solidObjects">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="656395444316233">
+                                            <conditions>
+                                                <condition id="3" name="On key released" sid="721664392764809" type="Keyboard">
+                                                    <param id="0" name="Key">32</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="768677771082679" type="player">
+                                                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="867096156794404" type="solidObjects">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-group>
+                                <event-group description="" sid="294621189009723" title="Shifting">
+                                    <sub-events>
+                                        <event-block sid="294938598825687">
+                                            <conditions>
+                                                <condition id="2" name="Key is down" sid="602275336788067" type="Keyboard">
+                                                    <param id="0" name="Key">32</param>
+                                                </condition>
+                                                <condition id="-14" inverted="1" name="Compare variable" sid="660711178752822" type="System">
+                                                    <param id="0" name="Variable">shiftMeter</param>
+                                                    <param id="1" name="Comparison">2</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-11" name="Subtract from" sid="256267101202225" type="System">
+                                                    <param id="0" name="Variable">shiftMeter</param>
+                                                    <param id="1" name="Value">1.5</param>
+                                                </action>
+                                                <action id="3" name="Set progress" sid="546355138806867" type="ProgressBar">
+                                                    <param id="0" name="Value">shiftMeter</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="512601038069190">
+                                            <conditions>
+                                                <condition id="2" inverted="1" name="Key is down" sid="751168430725403" type="Keyboard">
+                                                    <param id="0" name="Key">32</param>
+                                                </condition>
+                                                <condition id="-14" inverted="1" name="Compare variable" sid="872832592621112" type="System">
+                                                    <param id="0" name="Variable">shiftMeter</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">100</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Add to" sid="729802449602564" type="System">
+                                                    <param id="0" name="Variable">shiftMeter</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="3" name="Set progress" sid="752594754016784" type="ProgressBar">
+                                                    <param id="0" name="Value">shiftMeter</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="166930844081362">
+                                            <conditions>
+                                                <condition id="1" name="Compare progress" sid="216667322502022" type="ProgressBar">
+                                                    <param id="0" name="Comparison">3</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Set group active" sid="611912939734196" type="System">
+                                                    <param id="0" name="Group name">&quot;Space&quot;</param>
+                                                    <param id="1" name="State">0</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="833902794502837" type="player">
+                                                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="682353006547068">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="257497987417014" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Set group active" sid="346690286726259" type="System">
+                                                    <param id="0" name="Group name">&quot;Shifting&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="736125045701950" type="System">
+                                                    <param id="0" name="Group name">&quot;Space&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-group description="" sid="621850474918690" title="Shifting disabled" />
+                                        <event-block sid="157095775972182">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="576386449958061" type="System">
+                                                    <param id="0" name="First value">scrollx</param>
+                                                    <param id="1" name="Comparison">2</param>
+                                                    <param id="2" name="Second value">3400</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="720204627888875" type="System">
+                                                    <param id="0" name="Variable">currentLevel</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Set group active" sid="455784427365284" type="System">
+                                                    <param id="0" name="Group name">&quot;Space&quot;</param>
+                                                    <param id="1" name="State">0</param>
+                                                </action>
+                                                <action id="1" name="Set visible" sid="991700867324135" type="ProgressBar">
+                                                    <param id="0" name="Visibility">0</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="603159223992082">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="320085591644718" type="System">
+                                                            <param id="0" name="Variable">currentLevel</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">1</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-12" name="Set group active" sid="200496709538661" type="System">
+                                                            <param id="0" name="Group name">&quot;Space&quot;</param>
+                                                            <param id="1" name="State">1</param>
+                                                        </action>
+                                                        <action id="1" name="Set visible" sid="268049530686186" type="ProgressBar">
+                                                            <param id="0" name="Visibility">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-group>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="562137974997487" title="Player Camera">
+                    <sub-events>
+                        <event-block sid="191008307328906">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="513197800864251" type="player">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="X co-ordinate">960</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="731680931382839">
+                                    <conditions>
+                                        <condition id="2" name="Is playing" sid="638978152182207" type="player">
+                                            <param id="0" name="Animation">&quot;Jump&quot;</param>
+                                        </condition>
+                                        <condition id="2" name="Is playing" sid="251644623181256" type="player">
+                                            <param id="0" name="Animation">&quot;Run&quot;</param>
+                                        </condition>
+                                        <condition id="2" name="Is playing" sid="620680360683163" type="player">
+                                            <param id="0" name="Animation">&quot;Shift&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-1" name="Set X" sid="309179501353708" type="natureBackground">
+                                            <param id="0" name="X">natureBackground.X+1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="648410900256103" title="Player Death">
+                    <sub-events>
+                        <event-block sid="587010320585118">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="206006876785802" type="player">
+                                    <param id="0" name="Object">dmgSprites</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="253903417922258">
+                                    <conditions>
+                                        <condition id="2" inverted="1" name="Is playing" sid="756232999853959" type="player">
+                                            <param id="0" name="Animation">&quot;Shift&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="367360693502784" type="Audio">
+                                            <param id="0" name="Audio file">deathSound</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="154277553832014" type="System">
+                                            <param id="0" name="Object to create">bloodParticles</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">player.X</param>
+                                            <param id="3" name="Y">player.Y</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="259508680903672" type="player" />
+                                        <action id="-4" name="Set layer visible" sid="496223078169656" type="System">
+                                            <param id="0" name="Layer">2</param>
+                                            <param id="1" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="377019264340257" type="System">
+                                            <param id="0" name="Group name">&quot;Death menu&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="300189063897465" type="System">
+                                            <param id="0" name="Variable">deathMenuSelect</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="731326360892884" title="Player GUI">
+                    <sub-events>
+                        <event-block sid="996895071657694">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="849165235728986" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set CSS style" sid="352278224196015" type="ProgressBar">
+                                    <param id="0" name="Property name">&quot;border-left&quot;</param>
+                                    <param id="1" name="Value">&quot;10px solid white&quot;</param>
+                                </action>
+                                <action id="2" name="Set CSS style" sid="408918029776244" type="ProgressBar">
+                                    <param id="0" name="Property name">&quot;border-right&quot;</param>
+                                    <param id="1" name="Value">&quot;10px solid white&quot;</param>
+                                </action>
+                                <action id="2" name="Set CSS style" sid="729546678857104" type="ProgressBar">
+                                    <param id="0" name="Property name">&quot;border-top&quot;</param>
+                                    <param id="1" name="Value">&quot;1px solid white&quot;</param>
+                                </action>
+                                <action id="2" name="Set CSS style" sid="810112248890409" type="ProgressBar">
+                                    <param id="0" name="Property name">&quot;border-bottom&quot;</param>
+                                    <param id="1" name="Value">&quot;1px solid white&quot;</param>
+                                </action>
+                                <action id="2" name="Set CSS style" sid="748698478359885" type="ProgressBar">
+                                    <param id="0" name="Property name">&quot;background&quot;</param>
+                                    <param id="1" name="Value">&quot;red&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="842253598865627" title="Next level">
+            <sub-events>
+                <event-block sid="659607357687623">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="155246172120634" type="System" />
+                        <condition id="2" name="Is playing" sid="317395086490414" type="player">
+                            <param id="0" name="Animation">&quot;Back&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="791524610473571" type="player">
+                            <param id="0" name="Opacity">playerOpacity</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="728869470259831" type="System">
+                            <param id="0" name="Variable">playerOpacity</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="685562575182927">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="624788271539100" type="player">
+                            <param id="0" name="Object">door</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="810860930871909" type="door">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="310332038047596" type="player">
+                            <param id="0" name="Speed">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="293832017924311" type="player">
+                            <param id="0" name="Animation">&quot;Back&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="822574185883063">
+                            <conditions>
+                                <condition id="4" name="On finished" sid="165621491421349" type="door">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="253913492882451" type="door">
+                                    <param id="0" name="Frame number">4</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="683760246885644">
+                            <conditions />
+                            <actions>
+                                <action id="-16" name="Wait" sid="388604900083452" type="System">
+                                    <param id="0" name="Seconds">2.0</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="997404781593323" type="System">
+                                    <param id="0" name="Layout">secondLevel</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

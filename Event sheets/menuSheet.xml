@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>menuSheet</name>
+    <events>
+        <event-group description="" sid="837174494266797" title="Menu">
+            <sub-events>
+                <event-group description="" sid="695277359906840" title="Menu styling">
+                    <sub-events>
+                        <event-block sid="539133858346480">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="398136800311165" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set CSS style" sid="580497904445715" type="menuButttons">
+                                    <param id="0" name="Property name">&quot;color&quot;</param>
+                                    <param id="1" name="Value">&quot;white&quot;</param>
+                                </action>
+                                <action id="5" name="Set CSS style" sid="204291255320196" type="menuButttons">
+                                    <param id="0" name="Property name">&quot;border&quot;</param>
+                                    <param id="1" name="Value">&quot;2px solid white&quot;</param>
+                                </action>
+                                <action id="5" name="Set CSS style" sid="780876067347635" type="menuButttons">
+                                    <param id="0" name="Property name">&quot;background-color&quot;</param>
+                                    <param id="1" name="Value">&quot;transparent&quot;</param>
+                                </action>
+                                <action id="5" name="Set CSS style" sid="515699486520534" type="menuButttons">
+                                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                                    <param id="1" name="Value">&quot;40px&quot;</param>
+                                </action>
+                                <action id="5" name="Set CSS style" sid="282327973452728" type="menuButttons">
+                                    <param id="0" name="Property name">&quot;font-family&quot;</param>
+                                    <param id="1" name="Value">&quot;Microsoft Tai Le&quot;</param>
+                                </action>
+                                <action id="5" name="Set CSS style" sid="170180471642628" type="menuButttons">
+                                    <param id="0" name="Property name">&quot;font-weight&quot;</param>
+                                    <param id="1" name="Value">&quot;700&quot;</param>
+                                </action>
+                                <action id="1" name="Set visible" sid="573305963215319" type="ProgressBar">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="352902746286141" title="Menu movement">
+                    <sub-events>
+                        <variable constant="0" name="Select" sid="231701714158266" static="0" type="number">0</variable>
+                        <event-block sid="501360177566029">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="628705769477030" type="Keyboard">
+                                    <param id="0" name="Key">40</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="400045830235710">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="133126631477586" type="System">
+                                            <param id="0" name="Variable">menuSelect</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="224040506650311" type="System">
+                                            <param id="0" name="Variable">menuSelect</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="851446350618649">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="792711232012229" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="468497537027426" type="System">
+                                            <param id="0" name="Variable">menuSelect</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="630893846949043">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="380554506719961" type="Keyboard">
+                                    <param id="0" name="Key">38</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="709083177306245">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="817557218432498" type="System">
+                                            <param id="0" name="Variable">menuSelect</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="844583632722303" type="System">
+                                            <param id="0" name="Variable">menuSelect</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="785156376702849">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="933695155203015" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Subtract from" sid="981529809468294" type="System">
+                                            <param id="0" name="Variable">menuSelect</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="158793817279173">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="804079419971554" type="System">
+                                    <param id="0" name="Variable">menuSelect</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="157673561945679" type="markerLeft">
+                                    <param id="0" name="X">1150</param>
+                                    <param id="1" name="Y">460</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="649197093879153" type="markerRight">
+                                    <param id="0" name="X">1510</param>
+                                    <param id="1" name="Y">460</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="362190875751135">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="585504295319632" type="System">
+                                    <param id="0" name="Variable">menuSelect</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="410782307968635" type="markerLeft">
+                                    <param id="0" name="X">1150</param>
+                                    <param id="1" name="Y">620</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="649695371782899" type="markerRight">
+                                    <param id="0" name="X">1510</param>
+                                    <param id="1" name="Y">620</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="473878444815877">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="906002114875798" type="System">
+                                    <param id="0" name="Variable">menuSelect</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="552905326360810" type="markerLeft">
+                                    <param id="0" name="X">1150</param>
+                                    <param id="1" name="Y">780</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="506609205435997" type="markerRight">
+                                    <param id="0" name="X">1510</param>
+                                    <param id="1" name="Y">780</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="568491881469668" title="Mobile">
+                    <sub-events>
+                        <event-block sid="346696723844452">
+                            <conditions>
+                                <condition id="0" name="On clicked" sid="175188602447264" type="newGameButton" />
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Stop" sid="348741437250598" type="Audio">
+                                    <param id="0" name="Tag">&quot;menuMusic&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="913884510802712" type="Audio">
+                                    <param id="0" name="Audio file">gameSoundtrack</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">-10</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="332565778588723" type="System">
+                                    <param id="0" name="Layer">1</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="269827246544489" type="player">
+                                    <param id="0" name="Speed">500</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="150614737961389" type="player">
+                                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action behavior="Platform" id="11" name="Set enabled" sid="304850505106128" type="player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="1" name="Set visible" sid="479489029122141" type="ProgressBar">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="933534567782175">
+                            <conditions>
+                                <condition id="0" name="On clicked" sid="963981167500725" type="continueButton" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="515182308274804">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="589434667759532" type="System">
+                                            <param id="0" name="Variable">currentLevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="6" name="Stop" sid="931912115174894" type="Audio">
+                                            <param id="0" name="Tag">&quot;menuMusic&quot;</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="732245723411594" type="Audio">
+                                            <param id="0" name="Audio file">gameSoundtrack</param>
+                                            <param id="2" name="Loop">1</param>
+                                            <param id="3" name="Volume">-10</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="243456372801630" type="player">
+                                            <param id="0" name="Speed">500</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="607618052176716" type="player">
+                                            <param id="0" name="Animation">&quot;Run&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action behavior="Platform" id="11" name="Set enabled" sid="568178315792488" type="player">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                        <action id="1" name="Set visible" sid="382400462894963" type="ProgressBar">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="243332256507438" type="System">
+                                            <param id="0" name="Layer">1</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="340139473951198">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="542625668894272" type="System">
+                                            <param id="0" name="Variable">currentLevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="219398671903288" type="System">
+                                            <param id="0" name="Layout">secondLevel</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="423745771700268">
+                            <conditions>
+                                <condition id="0" name="On clicked" sid="286871056489776" type="exitGameButton" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Close" sid="415605636738207" type="Browser" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="356539615885469" title="LinksMobile">
+                    <sub-events>
+                        <event-block sid="440467299863387">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="662663038298121" type="Touch">
+                                    <param id="0" name="Object">linkedin</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="8" name="Open URL in new window" sid="919079114940569" type="Browser">
+                                    <param id="0" name="URL">&quot;https://www.linkedin.com/in/filip-medak-748279183/&quot;</param>
+                                    <param id="1" name="Tag">&quot;FilipMedak&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="416972731229916">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="497704130013162" type="Touch">
+                                    <param id="0" name="Object">portfolio</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="8" name="Open URL in new window" sid="987939190158276" type="Browser">
+                                    <param id="0" name="URL">&quot;http://filipmedak.com/&quot;</param>
+                                    <param id="1" name="Tag">&quot;FilipMedak&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="175986449566130" title="Desktop">
+                    <sub-events>
+                        <event-block sid="904244473997904">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="806815288799128" type="Keyboard">
+                                    <param id="0" name="Key">13</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="646133067103703" type="System">
+                                    <param id="0" name="Variable">menuSelect</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Stop" sid="945893538408014" type="Audio">
+                                    <param id="0" name="Tag">&quot;menuMusic&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="978588422295405" type="Audio">
+                                    <param id="0" name="Audio file">gameSoundtrack</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">-10</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="253827159009022" type="player">
+                                    <param id="0" name="Speed">500</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="522585949163244" type="player">
+                                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action behavior="Platform" id="11" name="Set enabled" sid="399909439411449" type="player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="1" name="Set visible" sid="722430319272645" type="ProgressBar">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="936688583519686" type="System">
+                                    <param id="0" name="Layer">1</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="764507628322995">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="977519427438188" type="Keyboard">
+                                    <param id="0" name="Key">13</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="566102676259249" type="System">
+                                    <param id="0" name="Variable">menuSelect</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="924841873201887">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="923304944594378" type="System">
+                                            <param id="0" name="Variable">currentLevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="6" name="Stop" sid="392922122207188" type="Audio">
+                                            <param id="0" name="Tag">&quot;menuMusic&quot;</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="720213230148860" type="Audio">
+                                            <param id="0" name="Audio file">gameSoundtrack</param>
+                                            <param id="2" name="Loop">1</param>
+                                            <param id="3" name="Volume">-10</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="780799069575427" type="player">
+                                            <param id="0" name="Speed">500</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="206585628157657" type="player">
+                                            <param id="0" name="Animation">&quot;Run&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action behavior="Platform" id="11" name="Set enabled" sid="877970700914677" type="player">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                        <action id="1" name="Set visible" sid="847827933426921" type="ProgressBar">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="333199316862739" type="System">
+                                            <param id="0" name="Layer">1</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="681625034979229">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="140566106524843" type="System">
+                                            <param id="0" name="Variable">currentLevel</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="783993560893243" type="System">
+                                            <param id="0" name="Layout">secondLevel</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="780086949848428">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="110865107791590" type="Keyboard">
+                                    <param id="0" name="Key">13</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="146442516573043" type="System">
+                                    <param id="0" name="Variable">menuSelect</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Close" sid="855110274243588" type="Browser" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="991674170730132" title="LinksDesktop">
+                    <sub-events>
+                        <event-block any="1" sid="187499055901424">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="977766499015374" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">linkedin</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="8" name="Open URL in new window" sid="770215063123926" type="Browser">
+                                    <param id="0" name="URL">&quot;https://www.linkedin.com/in/filip-medak-748279183/&quot;</param>
+                                    <param id="1" name="Tag">&quot;FilipMedak&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="494708958918230">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="284165643768717" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">portfolio</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="8" name="Open URL in new window" sid="924896573990894" type="Browser">
+                                    <param id="0" name="URL">&quot;http://filipmedak.com/&quot;</param>
+                                    <param id="1" name="Tag">&quot;FilipMedak&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

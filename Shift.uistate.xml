@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout active="1" order="2">gameLayout</layout>
+        <layout order="3">secondLevel</layout>
+        <event-sheet order="1">gameSheet</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="1" name="Window Size" />
+        <property expanded="0" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="0">
+        <family expanded="0" name="menuButttons" />
+        <family expanded="0" name="gameName" />
+        <family expanded="0" name="markers" />
+        <family expanded="0" name="animations" />
+        <family expanded="0" name="solidObjects" />
+        <family expanded="0" name="invisibleTexts" />
+        <family expanded="0" name="invisibleWalls" />
+        <family expanded="0" name="dmgSprites" />
+        <family expanded="0" name="ingameMenuButtons" />
+        <family expanded="0" name="ingameMenuButtons2" />
+        <family expanded="0" name="platformDownFamily" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="0" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/player/" />
+        <folder expanded="1" path="animation-folder/camera/" />
+        <folder expanded="1" path="animation-folder/stairs/" />
+        <folder expanded="1" path="animation-folder/rockyUnderground/" />
+        <folder expanded="1" path="animation-folder/bloodFloor/" />
+        <folder expanded="1" path="animation-folder/curtainRight/" />
+        <folder expanded="1" path="animation-folder/curtainLeft/" />
+        <folder expanded="1" path="animation-folder/pier/" />
+        <folder expanded="1" path="animation-folder/bigBanner/" />
+        <folder expanded="1" path="animation-folder/smallBanner/" />
+        <folder expanded="1" path="animation-folder/woodenLamp/" />
+        <folder expanded="1" path="animation-folder/swords/" />
+        <folder expanded="1" path="animation-folder/linkedin/" />
+        <folder expanded="1" path="animation-folder/bonfire/" />
+        <folder expanded="1" path="animation-folder/ceilingCandle/" />
+        <folder expanded="1" path="animation-folder/chandelier/" />
+        <folder expanded="1" path="animation-folder/floorCandle/" />
+        <folder expanded="1" path="animation-folder/skullCandleLeft/" />
+        <folder expanded="1" path="animation-folder/skullCandleRight/" />
+        <folder expanded="1" path="animation-folder/stickFire/" />
+        <folder expanded="1" path="animation-folder/rockPile/" />
+        <folder expanded="1" path="animation-folder/rockBlock/" />
+        <folder expanded="1" path="animation-folder/anvil/" />
+        <folder expanded="1" path="animation-folder/spikes/" />
+        <folder expanded="1" path="animation-folder/vase/" />
+        <folder expanded="1" path="animation-folder/box/" />
+        <folder expanded="1" path="animation-folder/invisibleWall/" />
+        <folder expanded="1" path="animation-folder/jumpingCollars/" />
+        <folder expanded="1" path="animation-folder/tutorialJumpWall/" />
+        <folder expanded="1" path="animation-folder/tutorialShiftWall/" />
+        <folder expanded="1" path="animation-folder/fire/" />
+        <folder expanded="1" path="animation-folder/animatedSpikes/" />
+        <folder expanded="1" path="animation-folder/wallSpikes/" />
+        <folder expanded="1" path="animation-folder/underground/" />
+        <folder expanded="1" path="animation-folder/invertedStairs/" />
+        <folder expanded="1" path="animation-folder/floorSprite/" />
+        <folder expanded="1" path="animation-folder/flame/" />
+        <folder expanded="1" path="animation-folder/blade/" />
+        <folder expanded="1" path="animation-folder/door/" />
+        <folder expanded="1" path="animation-folder/doorSecondLevel/" />
+        <folder expanded="1" path="animation-folder/platform1/" />
+        <folder expanded="1" path="animation-folder/platform2/" />
+        <folder expanded="1" path="animation-folder/platform3/" />
+        <folder expanded="1" path="animation-folder/star/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/invisibleWallDragon/" />
+        <folder expanded="1" path="animation-folder/platform4/" />
+        <folder expanded="1" path="animation-folder/platform5/" />
+        <folder expanded="1" path="animation-folder/platform6/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/stopSpeed/" />
+        <folder expanded="1" path="animation-folder/dragon/" />
+        <folder expanded="1" path="animation-folder/platformDown/" />
+        <folder expanded="1" path="animation-folder/platformUp/" />
+        <folder expanded="1" path="animation-folder/bigSpikes/" />
+        <folder expanded="1" path="animation-folder/coin/" />
+        <folder expanded="1" path="animation-folder/destroyingPlatform1/" />
+        <folder expanded="1" path="animation-folder/destroyingPlatform2/" />
+        <folder expanded="1" path="animation-folder/destroyingPlatform3/" />
+        <folder expanded="1" path="animation-folder/destroyFire/" />
+        <folder expanded="1" path="animation-folder/startSpeed/" />
+        <folder expanded="1" path="animation-folder/dragonSpeedUp/" />
+        <folder expanded="1" path="animation-folder/confetti/" />
+    </folders-expanded>
+</c2uistate>

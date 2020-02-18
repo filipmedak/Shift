@@ -1,0 +1,2992 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Shift</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1boy86xnf2vun</unique-id>
+    <saved-with-version>27500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="progressbar" version="1">Progress bar</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Scirra" id="blurhorizontal">Blur Horizontal</effect>
+        <effect author="Scirra" id="blurvertical">Blur Vertical</effect>
+        <effect author="Scirra" id="radialblur">Radial blur</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1920</width>
+        <height>1080</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Keyboard" sid="756120647591423">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="player" sid="787590917818555">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="playerOpacity" sid="481636428429118" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="108785510441573">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="128218631085728">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="CustomMovement" sid="350209117868001">
+                    <behavior id="custom" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="515648353492696">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="505561276752217" speed="3">
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\player\Default0.png">
+                        <collision-poly>
+                            <point x="0.153846" y="0.0666667" />
+                            <point x="0.461538" y="0" />
+                            <point x="0.846154" y="0.0666667" />
+                            <point x="0.769231" y="0.5" />
+                            <point x="0.923077" y="0.966667" />
+                            <point x="0.461538" y="1" />
+                            <point x="0.0769231" y="0.966667" />
+                            <point x="0.153846" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\player\Default1.png">
+                        <collision-poly>
+                            <point x="0.153846" y="0.0666667" />
+                            <point x="0.461538" y="0" />
+                            <point x="0.846154" y="0.0666667" />
+                            <point x="0.692308" y="0.5" />
+                            <point x="0.692308" y="0.866667" />
+                            <point x="0.461538" y="1" />
+                            <point x="0.0769231" y="0.966667" />
+                            <point x="0.0769231" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.517241" original-source="C:\Users\MedakF\Desktop\Shift\data\player\Default2.png">
+                        <collision-poly>
+                            <point x="0.153846" y="0.0689655" />
+                            <point x="0.461538" y="0" />
+                            <point x="0.846154" y="0.0689655" />
+                            <point x="0.846154" y="0.482759" />
+                            <point x="1" y="1" />
+                            <point x="0.461538" y="1" />
+                            <point x="0.0769231" y="0.965517" />
+                            <point x="0.153846" y="0.482759" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="Waiting" pingpong="1" repeatcount="1" repeatto="0" sid="853819328760200" speed="1">
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\player\Peace0.png">
+                        <collision-poly>
+                            <point x="0.153846" y="0.0833333" />
+                            <point x="0.461538" y="0" />
+                            <point x="0.846154" y="0.0833333" />
+                            <point x="0.846154" y="0.916667" />
+                            <point x="0.461538" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\player\Peace1.png">
+                        <collision-poly>
+                            <point x="0.153846" y="0.0833333" />
+                            <point x="0.461538" y="0" />
+                            <point x="0.846154" y="0.0833333" />
+                            <point x="0.846154" y="0.916667" />
+                            <point x="0.461538" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="535756593543567" speed="8.5">
+                    <frame duration="1" hotspotX="0.52381" hotspotY="0.5" original-source="D:\FilipMedak\GravMan\img\characterTiles\Run2.png">
+                        <collision-poly>
+                            <point x="0.0892857" y="0.459822" />
+                            <point x="0.511905" y="0.00669658" />
+                            <point x="0.898809" y="0" />
+                            <point x="1" y="0.421875" />
+                            <point x="0.833333" y="1" />
+                            <point x="0.172619" y="0.946428" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.517241" original-source="D:\FilipMedak\GravMan\img\characterTiles\Run3.png">
+                        <collision-poly>
+                            <point x="0.25" y="0" />
+                            <point x="0.85" y="0" />
+                            <point x="1" y="0.237069" />
+                            <point x="0.616667" y="1" />
+                            <point x="0" y="0.836207" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.517241" original-source="D:\FilipMedak\GravMan\img\characterTiles\Run4.png">
+                        <collision-poly>
+                            <point x="0.0326087" y="0.538793" />
+                            <point x="0.429347" y="0" />
+                            <point x="0.842392" y="0.0850907" />
+                            <point x="0.809784" y="0.920181" />
+                            <point x="0.184782" y="0.948276" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="0" name="Shift" pingpong="0" repeatcount="1" repeatto="0" sid="863603207132310" speed="7">
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.5" original-source="E:\SafePoint\GravMan\img\characterTiles\Shift5.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.5" original-source="E:\SafePoint\GravMan\img\characterTiles\Shift3.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52381" hotspotY="0.5" original-source="E:\SafePoint\GravMan\img\characterTiles\Shift4.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52381" hotspotY="0.5" />
+                </animation>
+                <animation framecount="4" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="794135396106658" speed="2">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52" original-source="C:\Users\MedakF\Desktop\Shift\img\characterTiles\Jump1.png">
+                        <collision-poly>
+                            <point x="0.409091" y="0.36" />
+                            <point x="0.5" y="0.08" />
+                            <point x="0.909091" y="0.08" />
+                            <point x="0.909091" y="0.48" />
+                            <point x="0.681818" y="0.72" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0454545" y="0.96" />
+                            <point x="0.181818" y="0.48" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.517241" original-source="C:\Users\MedakF\Desktop\Shift\img\characterTiles\Jump2.png">
+                        <collision-poly>
+                            <point x="0.235294" y="0.137931" />
+                            <point x="0.470588" y="0" />
+                            <point x="0.882353" y="0.0689655" />
+                            <point x="1" y="0.482759" />
+                            <point x="0.764706" y="0.862069" />
+                            <point x="0.470588" y="0.965517" />
+                            <point x="0.352941" y="0.793103" />
+                            <point x="0.0588235" y="0.482759" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\img\characterTiles\Jump3.png">
+                        <collision-poly>
+                            <point x="0.315789" y="0.230769" />
+                            <point x="0.473684" y="0" />
+                            <point x="0.894737" y="0.0769231" />
+                            <point x="1" y="0.5" />
+                            <point x="0.842105" y="0.884615" />
+                            <point x="0.473684" y="0.923077" />
+                            <point x="0.263158" y="0.807692" />
+                            <point x="0.157895" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\img\characterTiles\Jump4.png">
+                        <collision-poly>
+                            <point x="0.315789" y="0.230769" />
+                            <point x="0.473684" y="0" />
+                            <point x="0.894737" y="0.0769231" />
+                            <point x="1" y="0.5" />
+                            <point x="0.842105" y="0.884615" />
+                            <point x="0.473684" y="0.923077" />
+                            <point x="0.263158" y="0.807692" />
+                            <point x="0.157895" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="0" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="171654576419964" speed="5">
+                    <frame duration="1" hotspotX="0.44" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\img\characterTiles\Left1.png">
+                        <collision-poly>
+                            <point x="0.08" y="0.214286" />
+                            <point x="0.4" y="0" />
+                            <point x="0.72" y="0.25" />
+                            <point x="0.6" y="0.5" />
+                            <point x="0.8" y="0.821429" />
+                            <point x="0.4" y="1" />
+                            <point x="0.32" y="0.571429" />
+                            <point x="0.2" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.44" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.08" y="0.214286" />
+                            <point x="0.4" y="0" />
+                            <point x="0.72" y="0.25" />
+                            <point x="0.6" y="0.5" />
+                            <point x="0.8" y="0.821429" />
+                            <point x="0.4" y="1" />
+                            <point x="0.32" y="0.571429" />
+                            <point x="0.2" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\img\characterTiles\Left2.png">
+                        <collision-poly>
+                            <point x="0.555556" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.857143" />
+                            <point x="0.111111" y="0.5" />
+                            <point x="0.111111" y="0.0714286" />
+                            <point x="0.5" y="0" />
+                            <point x="0.722222" y="0.178571" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\img\characterTiles\Left3.png">
+                        <collision-poly>
+                            <point x="0.555556" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.857143" />
+                            <point x="0.111111" y="0.5" />
+                            <point x="0.111111" y="0.0714286" />
+                            <point x="0.5" y="0" />
+                            <point x="0.722222" y="0.178571" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\img\characterTiles\Left4.png">
+                        <collision-poly>
+                            <point x="0.555556" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.857143" />
+                            <point x="0.111111" y="0.5" />
+                            <point x="0.111111" y="0.0714286" />
+                            <point x="0.5" y="0" />
+                            <point x="0.722222" y="0.178571" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="Right" pingpong="0" repeatcount="0" repeatto="3" sid="381753941461435" speed="10">
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\img\characterTiles\Right1.png">
+                        <collision-poly>
+                            <point x="0.315789" y="0.214286" />
+                            <point x="0.473684" y="0.0357143" />
+                            <point x="0.894737" y="0.0714286" />
+                            <point x="0.789474" y="0.5" />
+                            <point x="0.736842" y="0.821429" />
+                            <point x="0.473684" y="0.928571" />
+                            <point x="0.210526" y="0.857143" />
+                            <point x="0.315789" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.47619" hotspotY="0.482759" original-source="C:\Users\MedakF\Desktop\Shift\img\characterTiles\Right2.png">
+                        <collision-poly>
+                            <point x="0.190476" y="0.206897" />
+                            <point x="0.428571" y="0" />
+                            <point x="0.857143" y="0.0689655" />
+                            <point x="1" y="0.482759" />
+                            <point x="0.761905" y="0.827586" />
+                            <point x="0.428571" y="1" />
+                            <point x="0.0952381" y="0.827586" />
+                            <point x="0" y="0.482759" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.409091" hotspotY="0.48" original-source="C:\Users\MedakF\Desktop\Shift\img\characterTiles\Right3.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.363636" y="0.36" />
+                            <point x="0.909091" y="0.04" />
+                            <point x="0.909091" y="0.48" />
+                            <point x="0.681818" y="0.72" />
+                            <point x="0.363636" y="0.96" />
+                            <point x="0" y="0.76" />
+                            <point x="0.181818" y="0.48" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="Back" pingpong="1" repeatcount="1" repeatto="0" sid="682913478899180" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Downloads\back1.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.1" />
+                            <point x="0.5" y="0" />
+                            <point x="0.8125" y="0.1" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.8125" y="0.9" />
+                            <point x="0.5" y="1" />
+                            <point x="0.1875" y="0.9" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Downloads\back0.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.1" />
+                            <point x="0.5" y="0" />
+                            <point x="0.8125" y="0.1" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.8125" y="0.9" />
+                            <point x="0.5" y="1" />
+                            <point x="0.1875" y="0.9" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Downloads\back3.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.1" />
+                            <point x="0.5" y="0" />
+                            <point x="0.8125" y="0.1" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.8125" y="0.9" />
+                            <point x="0.5" y="0.966667" />
+                            <point x="0.1875" y="0.9" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="Front" pingpong="1" repeatcount="1" repeatto="0" sid="436416606052774" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Downloads\front1.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.1" />
+                            <point x="0.5" y="0" />
+                            <point x="0.8125" y="0.1" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.8125" y="0.9" />
+                            <point x="0.5" y="1" />
+                            <point x="0.1875" y="0.9" />
+                            <point x="0.0625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Downloads\front0.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.1" />
+                            <point x="0.5" y="0" />
+                            <point x="0.8125" y="0.1" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.8125" y="0.9" />
+                            <point x="0.5" y="1" />
+                            <point x="0.1875" y="0.9" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Downloads\front3.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.1" />
+                            <point x="0.5" y="0" />
+                            <point x="0.8125" y="0.1" />
+                            <point x="0.9375" y="0.5" />
+                            <point x="0.8125" y="0.9" />
+                            <point x="0.5" y="0.966667" />
+                            <point x="0.1875" y="0.9" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="0" name="Checking" pingpong="0" repeatcount="0" repeatto="0" sid="223915179649276" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\dsadsa.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.0666667" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.0666667" />
+                            <point x="0.916667" y="0.5" />
+                            <point x="0.916667" y="0.966667" />
+                            <point x="0.5" y="1" />
+                            <point x="0.25" y="0.9" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\Shift\Animations\player\Back\001.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.1" />
+                            <point x="0.5" y="0" />
+                            <point x="0.8125" y="0.1" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.8125" y="0.9" />
+                            <point x="0.5" y="1" />
+                            <point x="0.1875" y="0.9" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\1.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.0666667" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.0666667" />
+                            <point x="0.75" y="0.5" />
+                            <point x="0.75" y="0.9" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.966667" />
+                            <point x="0.0833333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\Shift\Animations\player\Front\001.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.1" />
+                            <point x="0.5" y="0" />
+                            <point x="0.8125" y="0.1" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.8125" y="0.9" />
+                            <point x="0.5" y="1" />
+                            <point x="0.1875" y="0.9" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.166667" y="0.0666667" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.0666667" />
+                            <point x="0.916667" y="0.5" />
+                            <point x="0.916667" y="0.966667" />
+                            <point x="0.5" y="1" />
+                            <point x="0.25" y="0.9" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="1" name="VictoryDance" pingpong="1" repeatcount="1" repeatto="0" sid="866568111387721" speed="7">
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.5" original-source="E:\dance0.png" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.518519" original-source="E:\dance3.png">
+                        <collision-poly>
+                            <point x="0.210526" y="0.148148" />
+                            <point x="0.473684" y="0" />
+                            <point x="0.842105" y="0.111111" />
+                            <point x="1" y="0.481481" />
+                            <point x="0.947368" y="0.962963" />
+                            <point x="0.473684" y="1" />
+                            <point x="0.157895" y="0.888889" />
+                            <point x="0.210526" y="0.481481" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="E:\Collage\5th Semester\GDD\Shift\Animations\player\Front\001.png">
+                        <collision-poly>
+                            <point x="0.210526" y="0.148148" />
+                            <point x="0.473684" y="0" />
+                            <point x="0.842105" y="0.111111" />
+                            <point x="1" y="0.481481" />
+                            <point x="0.947368" y="0.962963" />
+                            <point x="0.473684" y="1" />
+                            <point x="0.157895" y="0.888889" />
+                            <point x="0.210526" y="0.481481" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.518519" original-source="E:\dance2.png">
+                        <collision-poly>
+                            <point x="0.157895" y="0.111111" />
+                            <point x="0.473684" y="0" />
+                            <point x="0.789474" y="0.148148" />
+                            <point x="0.789474" y="0.481481" />
+                            <point x="0.842105" y="0.888889" />
+                            <point x="0.473684" y="1" />
+                            <point x="0.0526316" y="0.962963" />
+                            <point x="0" y="0.481481" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.5" original-source="E:\dance1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="camera" sid="443286101574805">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="813179219770942" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="undergroundTileMap" sid="790556268102781">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\SafePoint\GravMan\img\castleTiles\ground.png" />
+        </object-type>
+        <object-type name="stairs" sid="543582669506967">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="494075791450056">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="843895168095306" speed="5">
+                    <frame duration="1" hotspotX="-1.375" hotspotY="1" original-source="E:\SafePoint\GravMan\img\castleTiles\ground.png">
+                        <collision-poly>
+                            <point x="0" y="0.242788" />
+                            <point x="1" y="0.735577" />
+                            <point x="0.998047" y="0.992788" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rockyUnderground" sid="594342380536852">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="251389634521499" speed="5">
+                    <frame duration="1" hotspotX="-0.625" hotspotY="3.46154" original-source="E:\SafePoint\GravMan\img\castleTiles\ground.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bloodFloor" sid="665282167902029">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="978795401256283">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="900711273359008" speed="5">
+                    <frame duration="1" hotspotX="-1.16667" hotspotY="-3.57143" original-source="E:\SafePoint\GravMan\img\castleTiles\ground.png">
+                        <collision-poly>
+                            <point x="0" y="0.166667" />
+                            <point x="1" y="0.184524" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="woodCeiling" sid="460899100401308">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\SafePoint\GravMan\img\castleTiles\wood_env.png" />
+        </object-type>
+        <object-type name="curtainRight" sid="277834747639415">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="134494710561893" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\SafePoint\GravMan\img\curtain1.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0833333" />
+                            <point x="0.5" y="0.1875" />
+                            <point x="0.9375" y="0.0833333" />
+                            <point x="0.9375" y="0.5" />
+                            <point x="0.84375" y="0.791667" />
+                            <point x="0.5" y="1" />
+                            <point x="0.25" y="0.666667" />
+                            <point x="0.09375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="curtainLeft" sid="949221059466379">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="669678725159095" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\SafePoint\GravMan\img\curtain2.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0833333" />
+                            <point x="0.5" y="0.208333" />
+                            <point x="0.9375" y="0.0833333" />
+                            <point x="0.90625" y="0.5" />
+                            <point x="0.75" y="0.666667" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15625" y="0.791667" />
+                            <point x="0.0625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pier" sid="632280522148443">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="561528258694976" speed="5">
+                    <frame duration="1" hotspotX="2" hotspotY="2" original-source="E:\SafePoint\GravMan\img\castleTiles\env_objects.png">
+                        <collision-poly>
+                            <point x="0" y="0.078125" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bigBanner" sid="211448611238146">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="626496732007553" speed="5">
+                    <frame duration="1" hotspotX="0.796296" hotspotY="3" original-source="E:\SafePoint\GravMan\img\castleTiles\environment.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.796296" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="smallBanner" sid="935386637409151">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="839198387365604" speed="5">
+                    <frame duration="1" hotspotX="-1.5" hotspotY="5" original-source="E:\SafePoint\GravMan\img\castleTiles\environment.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.625" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="woodenLamp" sid="248793620672687">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="954623440799763" speed="5">
+                    <frame duration="1" hotspotX="-1.5" hotspotY="0.719298" original-source="E:\SafePoint\GravMan\img\castleTiles\environment.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.625" y="0.719298" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="swords" sid="875368756221983">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="976287992131508" speed="5">
+                    <frame duration="1" hotspotX="2.21429" hotspotY="-0.962963" original-source="E:\SafePoint\GravMan\img\castleTiles\environment.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="natureBackground" sid="309560220188740">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\Collage\5th Semester\GDD\CastleTiles\Background.png" />
+        </object-type>
+        <object-type name="blockCeiling" sid="613858774716783">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\MedakF\Desktop\Shift\img\ceiling.png" />
+        </object-type>
+        <object-type name="floorTileMap" sid="585412098982780">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="308478999345028">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\MedakF\Desktop\Shift\img\castleTiles\ground.png" />
+        </object-type>
+        <object-type name="gameBackground" sid="742112190550859">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\MedakF\Desktop\Shift\data\objects\background.psd.png" />
+        </object-type>
+        <object-type name="newGameButton" sid="481448313065821">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="continueButton" sid="557637071576243">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="settingsButton" sid="498629981642555">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="exitGameButton" sid="703123201638304">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="portfolio" sid="495004326679059">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Sine" sid="979862653211517">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="gameName2" sid="590148065669847">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="gameName4" sid="337779483704107">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="deathMenuText" sid="875250166959224">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="539558887976176">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="gameName5" sid="612483254172265">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="gameName1" sid="192236793424146">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="markerLeft" sid="805175598663972">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="markerRight" sid="472827695630384">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Browser" sid="158982152743000">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="Touch" sid="529322882939383">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Mouse" sid="288165026032129">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="linkedin" sid="279931783692653">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="354638372352869">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="615289204439168" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\img\linkedinLogo.png">
+                        <collision-poly>
+                            <point x="0.0325" y="0.0340166" />
+                            <point x="0.5" y="0.325338" />
+                            <point x="0.69875" y="0.315307" />
+                            <point x="0.987917" y="0.499782" />
+                            <point x="1" y="1" />
+                            <point x="0.0125" y="0.986917" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bonfire" sid="568213012707093">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="791347989814060" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\bonfire\bonfire0.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.25" />
+                            <point x="0.875" y="0.25" />
+                            <point x="1" y="0.5" />
+                            <point x="0.9375" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0625" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\bonfire\bonfire1.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.375" />
+                            <point x="0.5" y="0.25" />
+                            <point x="0.8125" y="0.375" />
+                            <point x="1" y="0.5" />
+                            <point x="0.9375" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0625" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\bonfire\bonfire2.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.375" />
+                            <point x="0.5" y="0.25" />
+                            <point x="0.8125" y="0.375" />
+                            <point x="1" y="0.5" />
+                            <point x="0.9375" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0625" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\bonfire\bonfire3.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.375" />
+                            <point x="0.5" y="0.0625" />
+                            <point x="0.8125" y="0.375" />
+                            <point x="1" y="0.5" />
+                            <point x="0.9375" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0625" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ceilingCandle" sid="244997323975485">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="995431025986705" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\ceilingCandle\ceilingCandle0.png">
+                        <collision-poly>
+                            <point x="0.4375" y="0.21875" />
+                            <point x="0.5" y="0" />
+                            <point x="0.5625" y="0.21875" />
+                            <point x="0.625" y="0.5" />
+                            <point x="0.75" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.25" y="0.875" />
+                            <point x="0.375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\ceilingCandle\ceilingCandle1.png">
+                        <collision-poly>
+                            <point x="0.4375" y="0.21875" />
+                            <point x="0.5" y="0" />
+                            <point x="0.625" y="0.1875" />
+                            <point x="0.625" y="0.5" />
+                            <point x="0.75" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.25" y="0.875" />
+                            <point x="0.375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\ceilingCandle\ceilingCandle2.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.25" />
+                            <point x="0.5" y="0.21875" />
+                            <point x="0.6875" y="0.15625" />
+                            <point x="0.625" y="0.5" />
+                            <point x="0.75" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.25" y="0.875" />
+                            <point x="0.375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\ceilingCandle\ceilingCandle3.png">
+                        <collision-poly>
+                            <point x="0.4375" y="0.21875" />
+                            <point x="0.5" y="0" />
+                            <point x="0.5625" y="0.21875" />
+                            <point x="0.625" y="0.5" />
+                            <point x="0.75" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.25" y="0.875" />
+                            <point x="0.375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\ceilingCandle\ceilingCandle4.png">
+                        <collision-poly>
+                            <point x="0.375" y="0.1875" />
+                            <point x="0.5" y="0.21875" />
+                            <point x="0.5625" y="0.21875" />
+                            <point x="0.625" y="0.5" />
+                            <point x="0.75" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.25" y="0.875" />
+                            <point x="0.375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\ceilingCandle\ceilingCandle5.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.15625" />
+                            <point x="0.5" y="0.375" />
+                            <point x="0.5" y="0.25" />
+                            <point x="0.625" y="0.5" />
+                            <point x="0.75" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.25" y="0.875" />
+                            <point x="0.375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="chandelier" sid="376157695112771">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="5" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="807247891410593" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\chandelier\chandelier0.png">
+                        <collision-poly>
+                            <point x="0.375" y="0.328125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.625" y="0.328125" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.857143" y="0.875" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.142857" y="0.875" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\chandelier\chandelier1.png">
+                        <collision-poly>
+                            <point x="0.375" y="0.328125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.625" y="0.328125" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.857143" y="0.875" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.142857" y="0.875" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\chandelier\chandelier2.png">
+                        <collision-poly>
+                            <point x="0.375" y="0.328125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.625" y="0.328125" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.857143" y="0.875" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.142857" y="0.875" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\chandelier\chandelier3.png">
+                        <collision-poly>
+                            <point x="0.375" y="0.328125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.625" y="0.328125" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.857143" y="0.875" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.142857" y="0.875" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\chandelier\chandelier4.png">
+                        <collision-poly>
+                            <point x="0.375" y="0.328125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.625" y="0.328125" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.857143" y="0.875" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.142857" y="0.875" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="floorCandle" sid="605934054667605">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="417837589985594" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.538462" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\floorCandle\floorCandle0.png">
+                        <collision-poly>
+                            <point x="0.0714286" y="0.153846" />
+                            <point x="0.428571" y="0.230769" />
+                            <point x="0.857143" y="0.153846" />
+                            <point x="0.857143" y="0.461538" />
+                            <point x="0.928571" y="0.923077" />
+                            <point x="0.428571" y="1" />
+                            <point x="0.142857" y="0.769231" />
+                            <point x="0.142857" y="0.461538" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.571429" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\floorCandle\floorCandle1.png">
+                        <collision-poly>
+                            <point x="0.357143" y="0.357143" />
+                            <point x="0.5" y="0.428571" />
+                            <point x="0.785714" y="0.214286" />
+                            <point x="0.857143" y="0.5" />
+                            <point x="0.928571" y="0.928571" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0714286" y="0.928571" />
+                            <point x="0.142857" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\floorCandle\floorCandle2.png">
+                        <collision-poly>
+                            <point x="0.0833333" y="0.0833333" />
+                            <point x="0.5" y="0.166667" />
+                            <point x="1" y="0" />
+                            <point x="0.916667" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0833333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="skullCandleLeft" sid="945170484160032">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="615745814633399" speed="5">
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.529412" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\skullCandleLeft\skullCandleLeft0.png">
+                        <collision-poly>
+                            <point x="0.461538" y="0.352941" />
+                            <point x="0.461538" y="0.176471" />
+                            <point x="0.538462" y="0.352941" />
+                            <point x="0.846154" y="0.470588" />
+                            <point x="0.769231" y="0.823529" />
+                            <point x="0.461538" y="0.941176" />
+                            <point x="0.230769" y="0.823529" />
+                            <point x="0.153846" y="0.470588" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.529412" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\skullCandleLeft\skullCandleLeft1.png">
+                        <collision-poly>
+                            <point x="0.461538" y="0.352941" />
+                            <point x="0.461538" y="0.117647" />
+                            <point x="0.538462" y="0.352941" />
+                            <point x="0.846154" y="0.470588" />
+                            <point x="0.769231" y="0.823529" />
+                            <point x="0.461538" y="0.941176" />
+                            <point x="0.230769" y="0.823529" />
+                            <point x="0.153846" y="0.470588" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.529412" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\skullCandleLeft\skullCandleLeft2.png">
+                        <collision-poly>
+                            <point x="0.461538" y="0.352941" />
+                            <point x="0.461538" y="0.0588235" />
+                            <point x="0.538462" y="0.352941" />
+                            <point x="0.846154" y="0.470588" />
+                            <point x="0.769231" y="0.823529" />
+                            <point x="0.461538" y="0.941176" />
+                            <point x="0.230769" y="0.823529" />
+                            <point x="0.153846" y="0.470588" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="skullCandleRight" sid="471280034486728">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="957745285855212" speed="5">
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.529412" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\skullCandleRight\skullCandleRight0.png">
+                        <collision-poly>
+                            <point x="0.461538" y="0.352941" />
+                            <point x="0.461538" y="0.0588235" />
+                            <point x="0.538462" y="0.352941" />
+                            <point x="0.846154" y="0.470588" />
+                            <point x="0.769231" y="0.823529" />
+                            <point x="0.461538" y="0.941176" />
+                            <point x="0.230769" y="0.823529" />
+                            <point x="0.153846" y="0.470588" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.529412" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\skullCandleRight\skullCandleRight1.png">
+                        <collision-poly>
+                            <point x="0.461538" y="0.352941" />
+                            <point x="0.461538" y="0.117647" />
+                            <point x="0.538462" y="0.352941" />
+                            <point x="0.846154" y="0.470588" />
+                            <point x="0.769231" y="0.823529" />
+                            <point x="0.461538" y="0.941176" />
+                            <point x="0.230769" y="0.823529" />
+                            <point x="0.153846" y="0.470588" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.529412" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\skullCandleRight\skullCandleRight2.png">
+                        <collision-poly>
+                            <point x="0.461538" y="0.352941" />
+                            <point x="0.461538" y="0.176471" />
+                            <point x="0.538462" y="0.352941" />
+                            <point x="0.846154" y="0.470588" />
+                            <point x="0.769231" y="0.823529" />
+                            <point x="0.461538" y="0.941176" />
+                            <point x="0.230769" y="0.823529" />
+                            <point x="0.153846" y="0.470588" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="stickFire" sid="879045454351818">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="688328967361710" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\stickFire\stickFire0.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.0714286" />
+                            <point x="1" y="0.5" />
+                            <point x="0.875" y="0.857143" />
+                            <point x="0.5" y="1" />
+                            <point x="0.125" y="0.857143" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\stickFire\stickFire1.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.1875" />
+                            <point x="0.5" y="0.0625" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\stickFire\stickFire2.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.1875" />
+                            <point x="0.75" y="0.25" />
+                            <point x="1" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Shift\data\animations\stickFire\stickFire3.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rockPile" sid="263619046643921">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="891129070897884" speed="5">
+                    <frame duration="1" hotspotX="3.25" hotspotY="-6" original-source="C:\Users\MedakF\Desktop\Shift\data\castleTiles\environment.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rockBlock" sid="140810115269727">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="396701701188149" speed="5">
+                    <frame duration="1" hotspotX="0.125" hotspotY="-9.5625" original-source="C:\Users\MedakF\Desktop\Shift\data\castleTiles\environment.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.125" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.65625" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="anvil" sid="199779376786478">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="506630432089769" speed="5">
+                    <frame duration="1" hotspotX="-2.25" hotspotY="1" original-source="C:\Users\MedakF\Desktop\Shift\data\castleTiles\environment.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spikes" sid="382252486057709">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="272700754900294" speed="5">
+                    <frame duration="1" hotspotX="-2.33333" hotspotY="13.2353" original-source="C:\Users\MedakF\Desktop\Shift\data\castleTiles\environment.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0.0588235" />
+                            <point x="0.960784" y="0.0588235" />
+                            <point x="0" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="vase" sid="508379686904047">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="351701462860546" speed="5">
+                    <frame duration="1" hotspotX="2.75" hotspotY="-6.11111" original-source="C:\Users\MedakF\Desktop\Shift\data\castleTiles\environment.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="box" sid="780847796775708">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="113367137516438" speed="5">
+                    <frame duration="1" hotspotX="5.75" hotspotY="-2.5" original-source="C:\Users\MedakF\Desktop\Shift\data\castleTiles\environment.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.09375" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invisibleWall" sid="729891533080757">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="781102978545080">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="246994490689403" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="jumpingCollars" sid="922623478829059">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="769711327043608" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="-2" original-source="C:\Users\MedakF\Desktop\Shift\data\castleTiles\env_objects.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pressAny" sid="869910157403716">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Sine" sid="549121966737517">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="tutorialJumpWall" sid="551556822153362">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="749575150258363" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tutorialJumpText" sid="929512214169947">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Sine" sid="772518344224792">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="BlurHorizontal">
+                    <effect id="blurhorizontal" />
+                </effect-type>
+                <effect-type name="RadialBlur">
+                    <effect id="radialblur" />
+                </effect-type>
+                <effect-type name="BlurVertical">
+                    <effect id="blurvertical" />
+                </effect-type>
+            </effects>
+        </object-type>
+        <object-type name="tutorialShiftWall" sid="477080595293326">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="550229561040512" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tutorialShiftText" sid="679003736137292">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Sine" sid="993029699869869">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="BlurHorizontal">
+                    <effect id="blurhorizontal" />
+                </effect-type>
+                <effect-type name="BlurVertical">
+                    <effect id="blurvertical" />
+                </effect-type>
+                <effect-type name="RadialBlur">
+                    <effect id="radialblur" />
+                </effect-type>
+            </effects>
+        </object-type>
+        <object-type name="Audio" sid="904099526128553">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="fire" sid="723460439694699">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="791103321715795" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Projects\Shift\data\animations\fire\fire0.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.571429" y="0.375" />
+                            <point x="1" y="0.5" />
+                            <point x="0.857143" y="0.875" />
+                            <point x="0.142857" y="0.875" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Projects\Shift\data\animations\fire\fire1.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.714286" y="0.25" />
+                            <point x="0.857143" y="0.5" />
+                            <point x="0.857143" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.142857" y="0.875" />
+                            <point x="0.285714" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Projects\Shift\data\animations\fire\fire2.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.571429" y="0.375" />
+                            <point x="1" y="0.5" />
+                            <point x="0.714286" y="0.75" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Projects\Shift\data\animations\fire\fire3.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.714286" y="0.25" />
+                            <point x="0.857143" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.142857" y="0.875" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Projects\Shift\data\animations\fire\fire4.png">
+                        <collision-poly>
+                            <point x="0.285714" y="0.25" />
+                            <point x="0.5" y="0" />
+                            <point x="0.428571" y="0.5" />
+                            <point x="0.714286" y="0.5" />
+                            <point x="0.857143" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.142857" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Projects\Shift\data\animations\fire\fire5.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.714286" y="0.25" />
+                            <point x="0.857143" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.142857" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Projects\Shift\data\animations\fire\fire6.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.714286" y="0.25" />
+                            <point x="1" y="0.5" />
+                            <point x="0.857143" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.142857" y="0.875" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MedakF\Desktop\Projects\Shift\data\animations\fire\fire7.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.125" />
+                            <point x="0.5" y="0.0625" />
+                            <point x="0.785714" y="0.1875" />
+                            <point x="0.857143" y="0.5" />
+                            <point x="0.928571" y="0.9375" />
+                            <point x="0.0714286" y="0.9375" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gameOverText1" sid="139672432840870">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="793468395164862">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="gameOverYes" sid="249348921643178">
+            <plugin id="Button" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="517029097394000">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="gameOverNo" sid="909567720740966">
+            <plugin id="Button" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="560443540896599">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="walkParticles" sid="429061145962966">
+            <plugin id="Particles" />
+            <behaviors>
+                <behavior-type name="Pin" sid="904352022682394">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="animatedSpikes" sid="807380094661773">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="5" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="170681969849470" speed="4">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\grafika10\Downloads\PNG\Objects\spikes_trap1.png">
+                        <collision-poly>
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.765625" y="0.765625" />
+                            <point x="0.234375" y="0.765625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\grafika10\Downloads\PNG\Objects\spikes_trap2.png">
+                        <collision-poly>
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.632813" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.765625" y="0.765625" />
+                            <point x="0.234375" y="0.765625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\grafika10\Downloads\PNG\Objects\spikes_trap3.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.5" />
+                            <point x="0.5" y="0.484375" />
+                            <point x="0.507813" y="0.492188" />
+                            <point x="0.507813" y="0.5" />
+                            <point x="0.765625" y="0.765625" />
+                            <point x="0.234375" y="0.765625" />
+                            <point x="0.5" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\grafika10\Downloads\PNG\Objects\spikes_trap4.png">
+                        <collision-poly>
+                            <point x="0.492188" y="0.492188" />
+                            <point x="0.5" y="0.367188" />
+                            <point x="0.517578" y="0.492188" />
+                            <point x="0.594727" y="0.469238" />
+                            <point x="0.777344" y="0.616211" />
+                            <point x="0.765625" y="0.765625" />
+                            <point x="0.222656" y="0.765625" />
+                            <point x="0.225098" y="0.62793" />
+                            <point x="0.412109" y="0.467773" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\grafika10\Downloads\PNG\Objects\spikes_trap5.png">
+                        <collision-poly>
+                            <point x="0.418945" y="0.344727" />
+                            <point x="0.5" y="0.242188" />
+                            <point x="0.597656" y="0.34668" />
+                            <point x="0.828125" y="0.5" />
+                            <point x="0.765625" y="0.765625" />
+                            <point x="0.234375" y="0.765625" />
+                            <point x="0.179688" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="wallSpikes" sid="314018668352231">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="803369292911051" speed="4">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\grafika10\Downloads\PNG\Objects\spike1.png">
+                        <collision-poly>
+                            <point x="0.328125" y="0.328125" />
+                            <point x="0.651367" y="0.327148" />
+                            <point x="0.655273" y="0.661133" />
+                            <point x="0.329102" y="0.662109" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\grafika10\Downloads\PNG\Objects\spike2.png">
+                        <collision-poly>
+                            <point x="0.235352" y="0.21582" />
+                            <point x="0.5" y="0.34375" />
+                            <point x="0.748047" y="0.222656" />
+                            <point x="0.640625" y="0.5" />
+                            <point x="0.748047" y="0.759766" />
+                            <point x="0.5" y="0.640625" />
+                            <point x="0.234375" y="0.765625" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\grafika10\Downloads\PNG\Objects\spike3.png">
+                        <collision-poly>
+                            <point x="0.175781" y="0.142578" />
+                            <point x="0.5" y="0.34375" />
+                            <point x="0.810547" y="0.141602" />
+                            <point x="0.640625" y="0.5" />
+                            <point x="0.801758" y="0.84082" />
+                            <point x="0.5" y="0.640625" />
+                            <point x="0.172852" y="0.841797" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\grafika10\Downloads\PNG\Objects\spike4.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0175781" />
+                            <point x="0.5" y="0.34375" />
+                            <point x="0.920898" y="0.0107422" />
+                            <point x="0.640625" y="0.5" />
+                            <point x="0.915039" y="0.961914" />
+                            <point x="0.5" y="0.640625" />
+                            <point x="0.0722656" y="0.958984" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="underground" sid="409765612470954">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="760039379927181" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\grafika10\Downloads\Shift\Textures\underground.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invertedStairs" sid="449456783462641">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="576492041649419">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="741602383000229" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\grafika10\Downloads\Shift\Animations\stairs\Default\000.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.612981" />
+                            <point x="0.341797" y="0.396635" />
+                            <point x="0.503906" y="0.293269" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="floorSprite" sid="319105135995939">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="131404661779225" speed="5">
+                    <frame duration="1" hotspotX="0.501767" hotspotY="0.504" original-source="C:\Users\grafika10\Downloads\Shift\Textures\floorSprite.png">
+                        <collision-poly>
+                            <point x="0.0106007" y="0.024" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="flame" sid="307017839933943">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="10" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="375807378931240" speed="8">
+                    <frame duration="1" hotspotX="0.03125" hotspotY="0.507813" original-source="C:\Users\grafika10\Downloads\PNG\Objects\fire_trap1.png">
+                        <collision-poly>
+                            <point x="0.101563" y="0.492188" />
+                            <point x="0.123047" y="0.516602" />
+                            <point x="0.103516" y="0.548828" />
+                            <point x="0.102539" y="0.52832" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.03125" hotspotY="0.507813" original-source="C:\Users\grafika10\Downloads\PNG\Objects\fire_trap2.png">
+                        <collision-poly>
+                            <point x="0.166992" y="0.458008" />
+                            <point x="0.241211" y="0.5" />
+                            <point x="0.186523" y="0.541016" />
+                            <point x="0.102539" y="0.52832" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.03125" hotspotY="0.507813" original-source="C:\Users\grafika10\Downloads\PNG\Objects\fire_trap3.png">
+                        <collision-poly>
+                            <point x="0.101563" y="0.510742" />
+                            <point x="0.226563" y="0.452148" />
+                            <point x="0.421875" y="0.487305" />
+                            <point x="0.232422" y="0.569336" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.03125" hotspotY="0.507813" original-source="C:\Users\grafika10\Downloads\PNG\Objects\fire_trap4.png">
+                        <collision-poly>
+                            <point x="0.253906" y="0.40332" />
+                            <point x="0.538086" y="0.485352" />
+                            <point x="0.353516" y="0.588867" />
+                            <point x="0.115234" y="0.522461" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.03125" hotspotY="0.507813" original-source="C:\Users\grafika10\Downloads\PNG\Objects\fire_trap5.png">
+                        <collision-poly>
+                            <point x="0.262695" y="0.402344" />
+                            <point x="0.444336" y="0.408203" />
+                            <point x="0.693848" y="0.438477" />
+                            <point x="0.573242" y="0.59082" />
+                            <point x="0.187988" y="0.581543" />
+                            <point x="0.101563" y="0.505859" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.03125" hotspotY="0.507813" original-source="C:\Users\grafika10\Downloads\PNG\Objects\fire_trap6.png">
+                        <collision-poly>
+                            <point x="0.101563" y="0.492188" />
+                            <point x="0.293945" y="0.405273" />
+                            <point x="0.53418" y="0.377441" />
+                            <point x="0.804199" y="0.448486" />
+                            <point x="0.637451" y="0.596313" />
+                            <point x="0.233398" y="0.607422" />
+                            <point x="0.102539" y="0.52832" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.03125" hotspotY="0.507813" original-source="C:\Users\grafika10\Downloads\PNG\Objects\fire_trap7.png">
+                        <collision-poly>
+                            <point x="0.101563" y="0.492188" />
+                            <point x="0.28125" y="0.395508" />
+                            <point x="0.557617" y="0.379395" />
+                            <point x="0.794434" y="0.407471" />
+                            <point x="0.931396" y="0.490845" />
+                            <point x="0.657227" y="0.595703" />
+                            <point x="0.349609" y="0.640137" />
+                            <point x="0.102539" y="0.52832" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.03125" hotspotY="0.507813" original-source="C:\Users\grafika10\Downloads\PNG\Objects\fire_trap8.png">
+                        <collision-poly>
+                            <point x="0.211914" y="0.405273" />
+                            <point x="0.459961" y="0.371094" />
+                            <point x="0.84375" y="0.454102" />
+                            <point x="0.632813" y="0.555664" />
+                            <point x="0.398926" y="0.647949" />
+                            <point x="0.107178" y="0.525146" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.03125" hotspotY="0.507813" original-source="C:\Users\grafika10\Downloads\PNG\Objects\fire_trap9.png">
+                        <collision-poly>
+                            <point x="0.101563" y="0.492188" />
+                            <point x="0.123047" y="0.516602" />
+                            <point x="0.103516" y="0.548828" />
+                            <point x="0.102539" y="0.52832" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.03125" hotspotY="0.507813" original-source="C:\Users\grafika10\Downloads\PNG\Objects\fire_trap10.png">
+                        <collision-poly>
+                            <point x="0.101563" y="0.492188" />
+                            <point x="0.123047" y="0.516602" />
+                            <point x="0.103516" y="0.548828" />
+                            <point x="0.102539" y="0.52832" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="blade" sid="705736372072711">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="652297772963888" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\grafika10\Downloads\PNG\Objects\Blade1.png">
+                        <collision-poly>
+                            <point x="0.351563" y="0.351563" />
+                            <point x="0.5" y="0.28125" />
+                            <point x="0.671875" y="0.328125" />
+                            <point x="0.75" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="0.765625" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.21875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\grafika10\Downloads\PNG\Objects\Blade2.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.5" y="0.226563" />
+                            <point x="0.648438" y="0.351563" />
+                            <point x="0.710938" y="0.5" />
+                            <point x="0.664063" y="0.664063" />
+                            <point x="0.5" y="0.742188" />
+                            <point x="0.328125" y="0.671875" />
+                            <point x="0.242188" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\grafika10\Downloads\PNG\Objects\Blade3.png">
+                        <collision-poly>
+                            <point x="0.335938" y="0.335938" />
+                            <point x="0.5" y="0.242188" />
+                            <point x="0.695313" y="0.304688" />
+                            <point x="0.773438" y="0.5" />
+                            <point x="0.695313" y="0.695313" />
+                            <point x="0.5" y="0.710938" />
+                            <point x="0.34375" y="0.65625" />
+                            <point x="0.257813" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ProgressBar" sid="534100579306641">
+            <plugin id="progressbar" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="390552023814139">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="gameOverText2" sid="145580760293907">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="291215337803086">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="door" sid="972454838060844">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="213865285266619" speed="3">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Objects\door1.png">
+                        <collision-poly>
+                            <point x="0.570313" y="0.18457" />
+                            <point x="0.703125" y="0.296875" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.796875" y="0.796875" />
+                            <point x="0.56543" y="0.819336" />
+                            <point x="0.564454" y="0.612305" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Objects\door2.png">
+                        <collision-poly>
+                            <point x="0.546875" y="0.1875" />
+                            <point x="0.703125" y="0.296875" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.796875" y="0.796875" />
+                            <point x="0.546875" y="0.8125" />
+                            <point x="0.539063" y="0.617188" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Objects\door3.png">
+                        <collision-poly>
+                            <point x="0.546875" y="0.1875" />
+                            <point x="0.703125" y="0.296875" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.796875" y="0.796875" />
+                            <point x="0.546875" y="0.8125" />
+                            <point x="0.539063" y="0.617188" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Objects\door4.png">
+                        <collision-poly>
+                            <point x="0.546875" y="0.1875" />
+                            <point x="0.703125" y="0.296875" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.796875" y="0.796875" />
+                            <point x="0.546875" y="0.8125" />
+                            <point x="0.539063" y="0.617188" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Objects\door5.png">
+                        <collision-poly>
+                            <point x="0.546875" y="0.1875" />
+                            <point x="0.703125" y="0.296875" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.796875" y="0.796875" />
+                            <point x="0.546875" y="0.8125" />
+                            <point x="0.539063" y="0.617188" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tutorialEndText" sid="769591719532494">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Sine" sid="228004549431409">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="BlurHorizontal">
+                    <effect id="blurhorizontal" />
+                </effect-type>
+                <effect-type name="BlurVertical">
+                    <effect id="blurvertical" />
+                </effect-type>
+                <effect-type name="RadialBlur">
+                    <effect id="radialblur" />
+                </effect-type>
+            </effects>
+        </object-type>
+        <object-type name="bloodParticles" sid="302537559233550">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="deathMarkerRight2" sid="832330673767066">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="deathMarkerLeft2" sid="910103115493722">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="doorSecondLevel" sid="891722307759126">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="973408434250029" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\Shift\Animations\door\Default\004.png">
+                        <collision-poly>
+                            <point x="0.296875" y="0.296875" />
+                            <point x="0.5" y="0.171875" />
+                            <point x="0.703125" y="0.296875" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.796875" y="0.796875" />
+                            <point x="0.5" y="0.820313" />
+                            <point x="0.195313" y="0.804688" />
+                            <point x="0.210938" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\Shift\Animations\door\Default\003.png">
+                        <collision-poly>
+                            <point x="0.296875" y="0.296875" />
+                            <point x="0.5" y="0.171875" />
+                            <point x="0.703125" y="0.296875" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.796875" y="0.796875" />
+                            <point x="0.5" y="0.820313" />
+                            <point x="0.195313" y="0.804688" />
+                            <point x="0.210938" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\Shift\Animations\door\Default\002.png">
+                        <collision-poly>
+                            <point x="0.296875" y="0.296875" />
+                            <point x="0.5" y="0.171875" />
+                            <point x="0.703125" y="0.296875" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.796875" y="0.796875" />
+                            <point x="0.5" y="0.820313" />
+                            <point x="0.195313" y="0.804688" />
+                            <point x="0.210938" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\Shift\Animations\door\Default\001.png">
+                        <collision-poly>
+                            <point x="0.296875" y="0.296875" />
+                            <point x="0.5" y="0.171875" />
+                            <point x="0.703125" y="0.296875" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.796875" y="0.796875" />
+                            <point x="0.5" y="0.820313" />
+                            <point x="0.195313" y="0.804688" />
+                            <point x="0.210938" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\Shift\Animations\door\Default\000.png">
+                        <collision-poly>
+                            <point x="0.296875" y="0.296875" />
+                            <point x="0.5" y="0.171875" />
+                            <point x="0.703125" y="0.296875" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.796875" y="0.796875" />
+                            <point x="0.5" y="0.820313" />
+                            <point x="0.195313" y="0.804688" />
+                            <point x="0.210938" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="324936353315030">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Button" sid="433421226539038">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="gameOverNo2" sid="694706794799057">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="gameOverYes2" sid="526740219965544">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="platform1" sid="821070551267475">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="320718686265109">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="182093605049983" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\tiles\tile14.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="1" y="0.5" />
+                            <point x="0.765625" y="0.765625" />
+                            <point x="0.5" y="0.765625" />
+                            <point x="0.359375" y="0.640625" />
+                            <point x="0.265625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="platform2" sid="195969367607874">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="493192356826579">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="730683818630445" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\tiles\tile16.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0.234375" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="1" y="0.5" />
+                            <point x="0.765625" y="0.765625" />
+                            <point x="0.234375" y="0.765625" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="platform3" sid="960976433800812">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="422677527804105">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="295169276313373" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\tiles\tile15.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.734375" y="0.5" />
+                            <point x="0.640625" y="0.640625" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.234375" y="0.765625" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="star" sid="918475128202138">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="10" loop="1" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="325693127446775" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Items\star1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Items\star2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Items\star3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Items\star4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Items\star5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Items\star6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Items\star7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Items\star8.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Items\star9.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Items\star10.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="172302360445491">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="548958384299857" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="invisibleWallDragon" sid="177398409826378">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="630580557375223">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="560466626103785" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dragonText" sid="648675787081139">
+            <plugin id="Text" />
+            <effects>
+                <effect-type name="BlurHorizontal">
+                    <effect id="blurhorizontal" />
+                </effect-type>
+                <effect-type name="BlurVertical">
+                    <effect id="blurvertical" />
+                </effect-type>
+                <effect-type name="RadialBlur">
+                    <effect id="radialblur" />
+                </effect-type>
+            </effects>
+        </object-type>
+        <object-type name="platform4" sid="736961984173820">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="324665213263793">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="896490229991412" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\tiles\tile32.png">
+                        <collision-poly>
+                            <point x="0.328125" y="0.328125" />
+                            <point x="0.671875" y="0.328125" />
+                            <point x="0.890625" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="1" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="platform5" sid="560466458596360">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="743185714819191">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="300110821230528" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\tiles\tile34.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.25" />
+                            <point x="0.5" y="0" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="1" />
+                            <point x="0.25" y="0.75" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="platform6" sid="229426191867021">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="509701777176129">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="946131607861022" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\tiles\tile33.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.25" />
+                            <point x="0.5" y="0" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.734375" y="0.5" />
+                            <point x="0.640625" y="0.640625" />
+                            <point x="0.5" y="0.625" />
+                            <point x="0.359375" y="0.640625" />
+                            <point x="0.265625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="713243865563645">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="748008458626453" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="stopSpeed" sid="596755342699616">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="511606795943329" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dragon" sid="319802224974585">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="655687865037821">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="809245369532192">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="259882154776356">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="688868536930475">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="16" loop="1" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="990664834315614" speed="15">
+                    <frame duration="1" hotspotX="0.500444" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Walk_000.png" />
+                    <frame duration="1" hotspotX="0.500444" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Walk_001.png" />
+                    <frame duration="1" hotspotX="0.500444" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Walk_002.png" />
+                    <frame duration="1" hotspotX="0.500444" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Walk_003.png" />
+                    <frame duration="1" hotspotX="0.500444" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Walk_004.png" />
+                    <frame duration="1" hotspotX="0.500444" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Walk_005.png" />
+                    <frame duration="1" hotspotX="0.500444" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Walk_006.png" />
+                    <frame duration="1" hotspotX="0.500444" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Walk_007.png" />
+                    <frame duration="1" hotspotX="0.500444" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Walk_008.png" />
+                    <frame duration="1" hotspotX="0.500444" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Walk_009.png" />
+                    <frame duration="1" hotspotX="0.500444" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Walk_010.png" />
+                    <frame duration="1" hotspotX="0.500444" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Walk_011.png" />
+                    <frame duration="1" hotspotX="0.500444" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Walk_012.png" />
+                    <frame duration="1" hotspotX="0.500444" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Walk_013.png" />
+                    <frame duration="1" hotspotX="0.500444" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Walk_014.png" />
+                    <frame duration="1" hotspotX="0.500444" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Walk_015.png" />
+                </animation>
+                <animation framecount="33" loop="0" name="SpittingFire" pingpong="0" repeatcount="1" repeatto="0" sid="993706951407588" speed="20">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.278552" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_003.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.208589" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_031.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.209375" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_000.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.225225" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_001.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.26087" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_002.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.293956" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_004.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.298667" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_005.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.317204" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_006.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.314286" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_007.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.314433" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_008.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.337596" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_009.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.355556" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_010.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.298667" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_011.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.271709" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_012.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.278552" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_013.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.43871" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_014.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.531022" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_015.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52459" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_016.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.513761" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_017.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509259" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_018.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.732793" y="0.262736" />
+                            <point x="0.924427" y="0.970484" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.513915" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_019.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.62753" y="0.0590733" />
+                            <point x="0.956815" y="0.951911" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.51577" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_020.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.719298" y="0.248313" />
+                            <point x="0.97301" y="0.970463" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.519266" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_021.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.786774" y="0.374425" />
+                            <point x="0.967611" y="0.970586" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.432967" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_022.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.721997" y="0.260986" />
+                            <point x="0.964912" y="0.94643" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.439394" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_023.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.730094" y="0.270576" />
+                            <point x="0.954116" y="0.95995" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.173203" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_024.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.194969" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_025.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.196319" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_026.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.170968" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_027.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.187302" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_028.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.179739" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_029.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.182965" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_030.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.2" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Attack_032.png">
+                        <collision-poly>
+                            <point x="0.234818" y="0.0184049" />
+                            <point x="0.875843" y="0.0368098" />
+                            <point x="0.875843" y="0.981595" />
+                            <point x="0.245614" y="0.944786" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="13" loop="0" name="Death" pingpong="0" repeatcount="1" repeatto="0" sid="242620161976296" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Dead_000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Dead_001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Dead_002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Dead_003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Dead_004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Dead_005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Dead_006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Dead_007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Dead_008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Dead_009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Dead_010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Dead_011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Dead_012.png" />
+                </animation>
+                <animation framecount="25" loop="1" name="Idle" pingpong="0" repeatcount="0" repeatto="0" sid="322860083352332" speed="10">
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_021.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_019.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_000.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_001.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_002.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_003.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_004.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_005.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_006.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_007.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_008.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_009.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_010.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_011.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_012.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_013.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_014.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_015.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_016.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_017.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_018.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_020.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_022.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_023.png" />
+                    <frame duration="1" hotspotX="0.500408" hotspotY="0.500648" original-source="E:\Collage\5th Semester\GDD\dragons\PNG\Animation\Dragon3\Idle_024.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Particles" sid="792667251764962">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="platformDown" sid="919668788194006">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="908549292718316">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="962193209442943" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\Shift\Animations\platform2\Default\000.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0.234375" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="1" y="0.5" />
+                            <point x="0.765625" y="0.765625" />
+                            <point x="0.234375" y="0.765625" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="platformUp" sid="977843448034742">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="752917044255668">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="341270357943951" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\Shift\Animations\platform2\Default\000.png">
+                        <collision-poly>
+                            <point x="0" y="0.5" />
+                            <point x="0.234375" y="0.234375" />
+                            <point x="0.765625" y="0.234375" />
+                            <point x="1" y="0.5" />
+                            <point x="0.78125" y="0.78125" />
+                            <point x="0.5" y="0.765625" />
+                            <point x="0.21875" y="0.78125" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bigSpikes" sid="987044168735789">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="596877257712054" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Objects\big_spikes1.png">
+                        <collision-poly>
+                            <point x="0.0664063" y="0.628906" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.984375" y="0.5" />
+                            <point x="0.96875" y="0.734375" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.207031" y="0.734375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="coin" sid="334538187306437">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="10" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="617532930440498" speed="12">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Items\coin1.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0.09375" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.90625" y="0.5" />
+                            <point x="0.78125" y="0.78125" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0.1875" y="0.8125" />
+                            <point x="0.0625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Items\coin2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Items\coin3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Items\coin4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Items\coin5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Items\coin6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Items\coin7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Items\coin8.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Items\coin9.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\CastleTiles\PNG\Items\coin10.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dragonBloodParticles" sid="767991916198144">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="vibeText" sid="521114222365485">
+            <plugin id="Text" />
+            <effects>
+                <effect-type name="BlurHorizontal">
+                    <effect id="blurhorizontal" />
+                </effect-type>
+                <effect-type name="BlurVertical">
+                    <effect id="blurvertical" />
+                </effect-type>
+                <effect-type name="RadialBlur">
+                    <effect id="radialblur" />
+                </effect-type>
+            </effects>
+        </object-type>
+        <object-type name="destroyingPlatform1" sid="247481147249828">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="611220158714489">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="607410815503993" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\Shift\Animations\platform1\Default\000.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="1" y="0.5" />
+                            <point x="0.765625" y="0.765625" />
+                            <point x="0.5" y="0.765625" />
+                            <point x="0.359375" y="0.640625" />
+                            <point x="0.265625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="destroyingPlatform2" sid="755331485860932">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="850489939962537">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="675053757190506" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\Shift\Animations\platform2\Default\000.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0.234375" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="1" y="0.5" />
+                            <point x="0.765625" y="0.765625" />
+                            <point x="0.234375" y="0.765625" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="destroyingPlatform3" sid="618834663838267">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="640894972366533">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="493127465656591" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\Shift\Animations\platform3\Default\000.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.734375" y="0.5" />
+                            <point x="0.640625" y="0.640625" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.234375" y="0.765625" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="destroyFire" sid="438778260147294">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="475738459191129" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\Shift\Animations\fire\Default\000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\Shift\Animations\fire\Default\001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\Shift\Animations\fire\Default\002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\Shift\Animations\fire\Default\003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\Shift\Animations\fire\Default\004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\Shift\Animations\fire\Default\005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\Shift\Animations\fire\Default\006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Collage\5th Semester\GDD\Shift\Animations\fire\Default\007.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="vibeText2" sid="925355761468857">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Sine" sid="568558940172367">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="BlurHorizontal">
+                    <effect id="blurhorizontal" />
+                </effect-type>
+                <effect-type name="BlurHorizontal2">
+                    <effect id="blurhorizontal" />
+                </effect-type>
+                <effect-type name="RadialBlur">
+                    <effect id="radialblur" />
+                </effect-type>
+            </effects>
+        </object-type>
+        <object-type name="vibeText3" sid="563511187423511">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Sine" sid="873896657271215">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="BlurHorizontal">
+                    <effect id="blurhorizontal" />
+                </effect-type>
+                <effect-type name="BlurVertical">
+                    <effect id="blurvertical" />
+                </effect-type>
+                <effect-type name="RadialBlur">
+                    <effect id="radialblur" />
+                </effect-type>
+            </effects>
+        </object-type>
+        <object-type name="startSpeed" sid="334294376425253">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="428300438242892" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dragonSpeedUp" sid="764617267527894">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="476172019694321" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="confetti" sid="867004627248789">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="841652075919346">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="623591250637876" speed="5">
+                    <frame duration="1" hotspotX="0.666667" hotspotY="0.514793" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="menuButttons" plugin-id="Button" sid="923691297714554">
+            <members>
+                <member>continueButton</member>
+                <member>exitGameButton</member>
+                <member>newGameButton</member>
+                <member>settingsButton</member>
+            </members>
+        </family>
+        <family name="gameName" plugin-id="Text" sid="390730747702763">
+            <members>
+                <member>deathMenuText</member>
+                <member>gameName1</member>
+                <member>gameName2</member>
+                <member>gameName4</member>
+                <member>gameName5</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Sine" sid="782329021533786">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="BlurHorizontal">
+                    <effect id="blurhorizontal" />
+                </effect-type>
+                <effect-type name="RadialBlur">
+                    <effect id="radialblur" />
+                </effect-type>
+                <effect-type name="BlurVertical">
+                    <effect id="blurvertical" />
+                </effect-type>
+            </effects>
+        </family>
+        <family name="markers" plugin-id="Text" sid="643302935281819">
+            <members>
+                <member>markerLeft</member>
+                <member>markerRight</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Sine" sid="221173806132726">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="animations" plugin-id="Sprite" sid="382283645807023">
+            <members>
+                <member>bonfire</member>
+                <member>ceilingCandle</member>
+                <member>chandelier</member>
+                <member>floorCandle</member>
+                <member>skullCandleLeft</member>
+                <member>skullCandleRight</member>
+                <member>stickFire</member>
+            </members>
+        </family>
+        <family name="solidObjects" plugin-id="Sprite" sid="723088991997608">
+            <members>
+                <member>jumpingCollars</member>
+                <member>pier</member>
+                <member>rockyUnderground</member>
+                <member>tutorialJumpWall</member>
+                <member>tutorialShiftWall</member>
+                <member>underground</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Solid" sid="445549138086618">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="invisibleTexts" plugin-id="Text" sid="170575986209984">
+            <members>
+                <member>tutorialJumpText</member>
+                <member>tutorialShiftText</member>
+            </members>
+        </family>
+        <family name="invisibleWalls" plugin-id="Sprite" sid="699987947959981">
+            <members>
+                <member>tutorialJumpWall</member>
+                <member>tutorialShiftWall</member>
+            </members>
+        </family>
+        <family name="dmgSprites" plugin-id="Sprite" sid="584930043958232">
+            <members>
+                <member>animatedSpikes</member>
+                <member>bigSpikes</member>
+                <member>blade</member>
+                <member>destroyFire</member>
+                <member>fire</member>
+                <member>flame</member>
+                <member>spikes</member>
+                <member>wallSpikes</member>
+            </members>
+        </family>
+        <family name="ingameMenuButtons" plugin-id="Button" sid="631399564017246">
+            <members>
+                <member>gameOverNo</member>
+                <member>gameOverYes</member>
+            </members>
+        </family>
+        <family name="ingameMenuButtons2" plugin-id="Button" sid="286065476358832">
+            <members>
+                <member>gameOverNo2</member>
+                <member>gameOverYes2</member>
+            </members>
+        </family>
+        <family name="platformDownFamily" plugin-id="Sprite" sid="885212262614713">
+            <members>
+                <member>platformDown</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>gameLayout.xml</layout>
+        <layout>secondLevel.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>menuSheet.xml</event-sheet>
+        <event-sheet>gameSheet.xml</event-sheet>
+        <event-sheet>secondLevel.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="10" />
+        <global-instance type="Browser" uid="34" />
+        <global-instance type="Touch" uid="35">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Mouse" uid="36" />
+        <global-instance type="Audio" uid="1">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="castle_ambient.m4a" />
+        <file name="castle_ambient.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="menuMusic.ogg" />
+        <file name="deathSound.ogg" />
+        <file name="gameSoundtrack.ogg" />
+        <file name="dragonRoar.ogg" />
+        <file name="dragonSoundtrack.ogg" />
+        <file name="barouqeMusic.m4a" />
+        <file name="barouqeMusic.ogg" />
+        <file name="vibeMusic.m4a" />
+        <file name="vibeMusic.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
